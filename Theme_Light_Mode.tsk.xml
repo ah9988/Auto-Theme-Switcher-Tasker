@@ -1,0 +1,1329 @@
+<TaskerData sr="" dvi="1" tv="5.2.bf6">
+	<Task sr="task230">
+		<cdate>1534928575777</cdate>
+		<edate>1536065697910</edate>
+		<id>230</id>
+		<nme>Theme-Light Mode</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>300</code>
+			<label>Better battery stats</label>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%kiwi</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.kiwibrowser.browser</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act100" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"isThemeBlack" value="true"/"isThemeBlack" value="false"/g' /data/data/com.onelouder.baconreader/shared_prefs/com.onelouder.baconreader_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%bacon</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act101" ve="7">
+			<code>300</code>
+			<label>Moon Reader</label>
+		</Action>
+		<Action sr="act102" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act103" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%moon</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.flyersoft.moonreader</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act104" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"mainNightTheme" value="true"/"mainNightTheme" value="false"/g' /data/data/com.flyersoft.moonreader/shared_prefs/options1002.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%moon</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"user_night_mode_enabled" value="false"/"user_night_mode_enabled" value="true"/g' /data/data/com.kiwibrowser.browser/shared_prefs/com.kiwibrowser.browser_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%kiwi</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">am force-stop com.kiwibrowser.browser</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%kiwi</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>300</code>
+			<label>Twitter</label>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%twitter</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.twitter.android</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"three_state_night_mode"&gt;1/"three_state_night_mode"&gt;0/g' /data/data/com.twitter.android/shared_prefs/com.twitter.android_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%twitter</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>300</code>
+			<label>Via Browser</label>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%via</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">mark.via.gp</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%bbs</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.asksven.betterbatterystats_xdaedition</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"nightmode" value="true"/"nightmode" value="false"/g' /data/data/mark.via.gp/shared_prefs/settings.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%via</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>300</code>
+			<label>Solid explorer</label>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%solid</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">pl.solidexplorer2</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"theme"&gt;1/"theme"&gt;0/g' /data/data/pl.solidexplorer2/shared_prefs/pl.solidexplorer2_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%solid</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>300</code>
+			<label>Metal for Facebook</label>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%metal</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.nam.fbwrapper</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"int_theme"&gt;dark/"int_theme"&gt;default/g' /data/data/com.nam.fbwrapper/shared_prefs/com.nam.fbwrapper_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%metal</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>300</code>
+			<label>Textra SMS</label>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"theme"&gt;2/"theme"&gt;0/g' /data/data/com.asksven.betterbatterystats_xdaedition/shared_prefs/com.asksven.betterbatterystats_xdaedition_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%bbs</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%textra</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.textra</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act32" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"darkThemeTri"&gt;1/"darkThemeTri"&gt;0/g' /data/data/com.textra/shared_prefs/com.textra_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%textra</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act33" ve="7">
+			<code>300</code>
+			<label>QKSMS</label>
+		</Action>
+		<Action sr="act34" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act35" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%qksms</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.moez.QKSMS</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act36" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"night" value="true"/"night" value="false"/g' /data/data/com.moez.QKSMS/shared_prefs/com.moez.QKSMS_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%qksms</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act37" ve="7">
+			<code>300</code>
+			<label>Relay for reddit</label>
+		</Action>
+		<Action sr="act38" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act39" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%relay</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">free.reddit.news</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>300</code>
+			<label>Fasthub</label>
+		</Action>
+		<Action sr="act40" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"ThemeB"&gt;0/"ThemeB"&gt;2/g' /data/data/free.reddit.news/shared_prefs/SettingsV2_test.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%relay</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act41" ve="7">
+			<code>300</code>
+			<label>PowerAmp(Not working)</label>
+			<on>false</on>
+		</Action>
+		<Action sr="act42" ve="7">
+			<code>664</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act43" ve="7">
+			<code>664</code>
+			<on>false</on>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%qksms</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.moez.QKSMS</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act44" ve="7">
+			<code>123</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">sed -i -e 's/"settings_theme" value="0"/"settings_theme" value="2"/g' /data/data/com.maxmpz.audioplayer/shared_prefs/com.maxmpz.audioplayer_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+		<Action sr="act45" ve="7">
+			<code>300</code>
+			<label>ML manager</label>
+		</Action>
+		<Action sr="act46" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act47" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%mlmanager</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.javiersantos.mlmanager</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act48" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"prefNightTheme" value="true"/"prefNightTheme" value="false"/g' /data/data/com.javiersantos.mlmanager/shared_prefs/com.javiersantos.mlmanager_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%mlmanager</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act49" ve="7">
+			<code>300</code>
+			<label>Phonograph</label>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act50" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act51" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%phonograph</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.kabouzeid.gramophone</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act52" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"general_theme"&gt;dark/"general_theme"&gt;light/g' /data/data/com.kabouzeid.gramophone/shared_prefs/com.kabouzeid.gramophone_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%phonograph</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act53" ve="7">
+			<code>300</code>
+			<label>XDA Labs</label>
+		</Action>
+		<Action sr="act54" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act55" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%xda</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.xda.labs</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act56" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"theme" value="0"/"theme" value="1"/g' /data/data/com.xda.labs/shared_prefs/com.xda.labs.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%xda</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act57" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">am force-stop com.xda.labs</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%xda</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act58" ve="7">
+			<code>300</code>
+			<label>Opera browser(Force Stop needed)</label>
+		</Action>
+		<Action sr="act59" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%fasthub</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.fastaccess.github.libre</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act60" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%opera</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.opera.browser</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act61" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"app_theme" value="1"/"app_theme" value="0"/g' /data/data/com.opera.browser/shared_prefs/user_settings.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%opera</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act62" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">am force-stop com.opera.browser</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%opera</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act63" ve="7">
+			<code>300</code>
+			<label>Camera Roll</label>
+		</Action>
+		<Action sr="act64" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act65" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%cameraroll</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">us.koller.cameraroll</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act66" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"KEY_THEME"&gt;DARK/"KEY_THEME"&gt;LIGHT/g' /data/data/us.koller.cameraroll/shared_prefs/us.koller.cameraroll_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%cameraroll</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act67" ve="7">
+			<code>300</code>
+			<label>Signal(Force Stop needed)</label>
+		</Action>
+		<Action sr="act68" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act69" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%signal</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">org.thoughtcrime.securesms</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"appTheme"&gt;Dark Theme/"appTheme"&gt;Light Theme/g' /data/data/com.fastaccess.github.libre/shared_prefs/com.fastaccess.github.libre_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%fasthub</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act70" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"pref_theme"&gt;dark/"pref_theme"&gt;light/g' /data/data/org.thoughtcrime.securesms/shared_prefs/org.thoughtcrime.securesms_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%signal</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act71" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">am force-stop org.thoughtcrime.securesms</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%signal</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act72" ve="7">
+			<code>300</code>
+			<label>Medium</label>
+		</Action>
+		<Action sr="act73" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act74" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%medium</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.medium.reader</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act75" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/YES/NO/g' /data/data/com.medium.reader/shared_prefs/COMMON_PREF.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%medium</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act76" ve="7">
+			<code>300</code>
+			<label>Instapaper</label>
+		</Action>
+		<Action sr="act77" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act78" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%instapaper</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.instapaper.android</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act79" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"background_dark_mode" value="2"/"background_dark_mode" value="0"/g' /data/data/com.instapaper.android/shared_prefs/instapaper_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%instapaper</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>300</code>
+			<label>Kiwi browser
+Force Stop not needed on many situations.
+But I noticed that the webpage background color is still dark or white.
+If you are not facing the issue you can disable it as your wish.</label>
+		</Action>
+		<Action sr="act80" ve="7">
+			<code>300</code>
+			<label>Pocket(Force Stop needed)</label>
+		</Action>
+		<Action sr="act81" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act82" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%pocket</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.ideashower.readitlater.pro</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act83" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"appThemeDark" value="true"/"appThemeDark" value="false"/g' /data/data/com.ideashower.readitlater.pro/shared_prefs/com.ideashower.readitlater.pro_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%pocket</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act84" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"sa_up_pr" value="true"/"sa_up_pr" value="false"/g' /data/data/com.ideashower.readitlater.pro/shared_prefs/com.ideashower.readitlater.pro_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%pocket</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act85" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"appTheme" value="1"/"appTheme" value="0"/g' /data/data/com.ideashower.readitlater.pro/shared_prefs/com.ideashower.readitlater.pro_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%pocket</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act86" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"appThemeUseBlack" value="true"/"appThemeUseBlack value="false"/g' /data/data/com.ideashower.readitlater.pro/shared_prefs/com.ideashower.readitlater.pro_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%pocket</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act87" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">am force-stop com.ideashower.readitlater.pro</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%pocket</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act88" ve="7">
+			<code>300</code>
+			<label>Wikipedia</label>
+		</Action>
+		<Action sr="act89" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act90" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%wikipedia</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">org.wikipedia</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act91" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"colorTheme" value="1"/"colorTheme" value="0"/g' /data/data/org.wikipedia/shared_prefs/org.wikipedia_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%wikipedia</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act92" ve="7">
+			<code>300</code>
+			<label>Fair Email</label>
+		</Action>
+		<Action sr="act93" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act94" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%femail</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">eu.faircode.email</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act95" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"theme"&gt;light/"theme"&gt;dark/g' /data/data/eu.faircode.email/shared_prefs/eu.faircode.email_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%femail</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act96" ve="7">
+			<code>300</code>
+			<label>Bacon Reddit</label>
+		</Action>
+		<Action sr="act97" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">pm</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getPackageManager
+{PackageManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act98" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%bacon</Str>
+			<Str sr="arg1" ve="3">pm</Str>
+			<Str sr="arg2" ve="3">getPackageInfo
+{PackageInfo} (String, int)</Str>
+			<Str sr="arg3" ve="3">com.onelouder.baconreader</Str>
+			<Str sr="arg4" ve="3">1</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act99" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">sed -i -e 's/"isThemeLight" value="false"/"isThemeLight" value="true"/g' /data/data/com.onelouder.baconreader/shared_prefs/com.onelouder.baconreader_preferences.xml</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%bacon</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>
